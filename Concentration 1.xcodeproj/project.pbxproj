@@ -13,6 +13,8 @@
 		9C7E45C5204868BA00C8AB74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7E45C4204868BA00C8AB74 /* Assets.xcassets */; };
 		9C7E45C8204868BA00C8AB74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7E45C6204868BA00C8AB74 /* LaunchScreen.storyboard */; };
 		9C7E45D0204869A000C8AB74 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9C7E45CF204869A000C8AB74 /* .gitignore */; };
+		9C7E45D220486B8600C8AB74 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E45D120486B8600C8AB74 /* Concentration.swift */; };
+		9C7E45D420486BA500C8AB74 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E45D320486BA500C8AB74 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9C7E45C7204868BA00C8AB74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C7E45C9204868BA00C8AB74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C7E45CF204869A000C8AB74 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9C7E45D120486B8600C8AB74 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		9C7E45D320486BA500C8AB74 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				9C7E45C4204868BA00C8AB74 /* Assets.xcassets */,
 				9C7E45C6204868BA00C8AB74 /* LaunchScreen.storyboard */,
 				9C7E45C9204868BA00C8AB74 /* Info.plist */,
+				9C7E45D120486B8600C8AB74 /* Concentration.swift */,
+				9C7E45D320486BA500C8AB74 /* Card.swift */,
 			);
 			path = "Concentration 1";
 			sourceTree = "<group>";
@@ -142,6 +148,8 @@
 			files = (
 				9C7E45C0204868BA00C8AB74 /* ViewController.swift in Sources */,
 				9C7E45BE204868BA00C8AB74 /* AppDelegate.swift in Sources */,
+				9C7E45D220486B8600C8AB74 /* Concentration.swift in Sources */,
+				9C7E45D420486BA500C8AB74 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
