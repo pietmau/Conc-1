@@ -11,12 +11,33 @@ import Foundation
 class Concentration{
     var cards = [Card]()
     
-    init(numberOfPairs:Int) {
+    var indexOfFaceUpCard: Int?
+    
+    init(_ numberOfPairs:Int) {
         for _ in 1...numberOfPairs{
             let card = Card()
             cards += [card,card]
         }
     }
     
-    func chose(at index:Int){}
+    func chose(at index:Int){
+        if !cards[index].isMatched{
+            if let matchIndex = indexOfFaceUpCard, matchIndex != index{
+                if cards[matchIndex].identifier == cards[index].identifier{
+                    cards[matchIndex].isMatched = true
+                    cards[index].isMatched = true
+                }
+                cards[index].isFaceUp = true
+                indexOfFaceUpCard = nil
+            }
+            else
+            {
+                for down in cards.indices{
+                    cards[down].isFaceUp = false
+                }
+                cards[index].isFaceUp = true
+                indexOfFaceUpCard = index
+            }
+        }
+    }
 }
