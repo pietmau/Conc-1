@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    lazy var game = Concentration((cardButtons.count+1)/2)
+    lazy var game = makeNewGame()
   
     var flipCount:Int = 0 {didSet{
         label.text = "Flips \(flipCount)"
@@ -19,6 +19,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet var cardButtons: [UIButton]!
+    
+    @IBAction func onNewGameClick(_ sender: Any) {
+        flipCount = 0
+        game = makeNewGame()
+        updateViewFromModel()
+    }
+    
+    private func makeNewGame()->Concentration{return Concentration((cardButtons.count+1)/2)}
     
     @IBAction func onCardTouch(_ sender: UIButton) {
         flipCount += 1

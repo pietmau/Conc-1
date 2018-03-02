@@ -14,9 +14,19 @@ class Concentration{
     var indexOfFaceUpCard: Int?
     
     init(_ numberOfPairs:Int) {
-        for _ in 1...numberOfPairs{
-            let card = Card()
+        for i in 0..<numberOfPairs{
+            let card = Card(i)
             cards += [card,card]
+        }
+        shuffle()
+    }
+    
+    private func shuffle(){
+        for i in (0..<(cards.count)).reversed(){
+            let j = Int(arc4random_uniform(UInt32(i)))
+            let temp = cards[i]
+            cards[i] = cards[j]
+            cards[j] = temp
         }
     }
     
@@ -30,13 +40,11 @@ class Concentration{
                 cards[index].isFaceUp = true
                 indexOfFaceUpCard = nil
             }
-            else
-            {
+            else{
                 for down in cards.indices{
-                    cards[down].isFaceUp = false
-                }
-                cards[index].isFaceUp = true
-                indexOfFaceUpCard = index
+                    cards[down].isFaceUp = false}
+                    cards[index].isFaceUp = true
+                    indexOfFaceUpCard = index
             }
         }
     }

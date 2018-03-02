@@ -113,6 +113,17 @@
                                 <color key="textColor" red="1" green="0.55343993977761674" blue="0.18095327578080089" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppL-Z9-hwm">
+                                <rect key="frame" x="151.5" y="593" width="72" height="30"/>
+                                <color key="backgroundColor" red="0.071068557369999993" green="1" blue="0.10520946840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="cGN-5E-hNU"/>
+                                </constraints>
+                                <state key="normal" title="NEW"/>
+                                <connections>
+                                    <action selector="onNewGameClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DxY-je-EkY"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWw-fz-Ovh">
                                 <rect key="frame" x="0.0" y="273" width="80" height="120"/>
                                 <color key="backgroundColor" red="1" green="0.55343993979999995" blue="0.18095327580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -169,6 +180,8 @@
                             <constraint firstItem="Dfs-yY-C3r" firstAttribute="firstBaseline" secondItem="HWw-fz-Ovh" secondAttribute="firstBaseline" id="3rs-jW-sGg"/>
                             <constraint firstItem="HWw-fz-Ovh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5CB-Eg-iAK"/>
                             <constraint firstItem="VIW-JE-DCP" firstAttribute="baseline" secondItem="XdQ-NY-jHL" secondAttribute="baseline" id="6CK-rY-4wa"/>
+                            <constraint firstItem="ppL-Z9-hwm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6fl-t8-OcA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ppL-Z9-hwm" secondAttribute="bottom" constant="44" id="6yv-t2-A7r"/>
                             <constraint firstItem="VIW-JE-DCP" firstAttribute="firstBaseline" secondItem="XdQ-NY-jHL" secondAttribute="firstBaseline" id="7DL-rv-mtv"/>
                             <constraint firstItem="WKj-Qn-bYj" firstAttribute="baseline" secondItem="GpM-NJ-gxq" secondAttribute="baseline" constant="-1" id="8D4-FY-GMY"/>
                             <constraint firstItem="WKj-Qn-bYj" firstAttribute="leading" secondItem="Krm-ug-Vyg" secondAttribute="leading" constant="194" id="8nC-VQ-oEE"/>
@@ -201,6 +214,7 @@
                             <constraint firstItem="YB0-dn-u80" firstAttribute="firstBaseline" secondItem="Krm-ug-Vyg" secondAttribute="firstBaseline" constant="-1" id="cFY-rs-91z"/>
                             <constraint firstItem="YB0-dn-u80" firstAttribute="top" secondItem="Krm-ug-Vyg" secondAttribute="top" constant="-1" id="dHo-eq-3EG"/>
                             <constraint firstItem="Dfs-yY-C3r" firstAttribute="baseline" secondItem="4od-MQ-sUv" secondAttribute="baseline" id="dct-5r-g6e"/>
+                            <constraint firstItem="ppL-Z9-hwm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eze-81-7b5"/>
                             <constraint firstItem="HWw-fz-Ovh" firstAttribute="leading" secondItem="fIg-Kp-czB" secondAttribute="leading" id="hTj-fp-YN8"/>
                             <constraint firstItem="dXe-Em-ZTY" firstAttribute="firstBaseline" secondItem="fIg-Kp-czB" secondAttribute="firstBaseline" id="iQB-7X-J2M"/>
                             <constraint firstItem="fIg-Kp-czB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jch-4d-QHy"/>
@@ -239,6 +253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
         </scene>
     </scenes>
 </document>
